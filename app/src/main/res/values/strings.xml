@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CodeGenerator</string>
+    <string name="factory_code">厂家编码</string>
+    <string name="generate_code">生成厂家编码</string>
+    <string name="verify_code">验证厂家编码</string>
+    <string name="factory_name">厂家名称</string>
+    <string name="hex_filter">1234567890abcdefABCDEF</string>
+    <string name="set_valid_data">设置有效期限</string>
+</resources>

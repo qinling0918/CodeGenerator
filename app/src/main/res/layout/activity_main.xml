@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_tv_factory_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/factory_name" />
+    <AutoCompleteTextView
+        android:id="@+id/auto_tv_factory_code"
+        android:layout_width="match_parent"
+        android:digits="@string/hex_filter"
+        android:layout_height="wrap_content"
+        android:hint="@string/factory_code" />
+    <CheckBox
+        android:id="@+id/cb_set_time"
+        tools:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_valid_data"  />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_valid_time"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/sp_time_unit"
+            android:entries="@array/time_unit"
+            android:spinnerMode="dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_generate_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_code" />
+    <Button
+        android:id="@+id/bt_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_code" />
+
+    <CheckedTextView
+        android:id="@+id/ctv_verify_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/color_text"
+        />
+
+</LinearLayout>
